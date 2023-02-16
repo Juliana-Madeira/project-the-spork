@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Common */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #FEFBF8;
+}
+
+.header {
+    background-color: #FAF6EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo_header {
+    width: 170px;
+    margin: 15px 0px 2px 0px;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 10px 30px 20px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(43, 22, 12, 0.902);
+    border-radius: 10px;
+}
+
+.link_menu{
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    color: rgba(43, 22, 12, 0.902);
+}
+
+/* Home */
+.main_home{
+    width: 70%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+}
+
+.main_text{
+    text-align: justify;
+}
+
+.main_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.main_image_figcaption{
+    font-size: 12px;
+}
+
+.main_image_figcaption a {
+    text-decoration: none;
+    color: rgba(43, 22, 12, 0.902);
+}
+
+.image_pancake{
+    width: 300px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.main_title{
+    color: rgba(43, 22, 12, 0.902);
+}
+
+
+/* Sobre mim */
+.main_about{
+    width: 50%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    text-align: justify;
+    line-height: 2.5;
+}
+
+.main_about h4 {
+    margin-top: -50px;
+}
+
+.utils_links{
+    margin-top: 25px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+.utils_links a{
+    text-decoration: none;
+    color: rgb(43, 22, 12);
+    font-weight: 600;
+}
+
+
+/* Culinárias */
+.image_food{
+    width: 230px;
+    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 50px;
+}
+
+.food a{
+    text-decoration: none;
+    color: rgb(43, 22, 12);
+}
+
+.food_row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin-top: -30px;
+}
+
+
+/* Culinárias Detalhes */
+.food_detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.image_food_detail{
+    width: 330px;
+    height: 350px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.ingrendients_list{
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.title_ingredient {
+    color: rgb(43, 22, 12);
+    font-weight: bold;
+}
+
+.to_do {
+    width: 70%;
+    margin-top: 15px;
+    line-height: 2;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: rgb(43, 22, 12);
+    font-weight: bold;
+}
+
+
+/* Contato */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.contato_title {
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+.form button {
+    width: 110px;
+    padding: 7px;
+    font-size: 14px;
+    border-radius: 7px;
+    border: 1px solid rgb(43, 22, 12);
+    background-color: rgb(43, 22, 12);
+    color: white;
+}
+
+.form button:hover {
+    border: 1px solid rgb(43, 22, 12);
+    background-color: white;
+    color: rgb(43, 22, 12);
+}
+
+textarea {
+    border-radius: 7px;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+
+/* Footer */
+.footer {
+    background-color: #FAF6EB;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a span{
+    color: rgba(43, 22, 12, 0.902);
+    font-weight: 600;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}

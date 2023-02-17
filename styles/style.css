@@ -54,6 +54,45 @@ body{
     color: rgba(43, 22, 12, 0.902);
 }
 
+/* change theme */
+/* dark theme */
+#change-theme {
+    display: none;
+}
+.dark,
+.dark h2,
+.dark h3,
+.dark .food p,
+.dark footer,
+.dark .title_ingredient,
+.dark .title,
+.dark .utils_links p a{
+    background-color: rgb(43, 22, 12);
+    color: #FFF;
+}
+.dark footer a,
+.dark a i,
+.dark footer a span{
+    color: #FFF;
+}
+.change-theme-all{
+    text-align: right;
+    margin: 20px;
+}
+.bi {
+    cursor: pointer;
+    font-size: 18px;
+}
+.bi-moon{
+    display: none;
+}
+.dark .bi-sun{
+    display: none;
+}
+.dark .bi-moon{
+    display: block;
+}
+
 /* Home */
 .main_home{
     width: 70%;

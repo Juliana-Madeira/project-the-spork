@@ -24,6 +24,20 @@
                 <li><a href="./contato.html" class="link_menu">Contato</a></li>
             </ul>
         </nav>
+        <div class="overlayMenu" id="overlayMenu">
+            <a href="javascript:void(0)" class="closeMenu" id="closeMenu" onclick="closeMenu()">&times;</a>
+            <nav class="overlay-content">
+                <ul>
+                    <li><a href="./index.html" class="link_menu">Home</a></li>
+                    <li><a href="./culinarias.html" class="link_menu">Culinárias</a></li>
+                    <li><a href="./sobre.html" class="link_menu">Sobre mim</a></li>
+                    <li><a href="./contato.html" class="link_menu">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="hamburger-menu" onclick="openMenu()">
+            <i class="bi bi-list" style="font-size: 40px; color: rgb(43, 22, 12);"></i>
+        </button>
     </header>
     <div class="change-theme-all">
         <input type="checkbox" name="change=theme" id="change-theme">
@@ -51,11 +65,12 @@
             <p>O projeto consiste em um site de receitas diversas de várias localidades do mundo. </p>
             <p>As tecnologias usadas foram HTML, CSS e Javascript. </p>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam blanditiis amet laborum. Esse eveniet earum nostrum
-            quae dolores laudantium fugit? Recusandae earum ducimus nulla optio? Quidem officiis quibusdam dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam blanditiis amet laborum. Esse eveniet earum nostrum
-            quae dolores laudantium fugit? Recusandae earum ducimus nulla optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam blanditiis amet laborum. 
+            <p class="p-float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam blanditiis amet laborum. Esse eveniet earum nostrum
+                quae dolores laudantium fugit? Recusandae earum ducimus nulla optio? Quidem officiis quibusdam dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam blanditiis amet laborum. Esse eveniet earum nostrum
+                quae dolores laudantium fugit? Recusandae earum ducimus nulla optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam blanditiis amet laborum. 
             </p>
         </div>
+            
     </main>
     <footer class="footer">
         <p><a href="https://www.linkedin.com/in/juliana-g-madeira/" target="_blank">Desenvolvido por <span>Juliana Madeira</span></a></p>

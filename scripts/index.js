@@ -30,3 +30,12 @@ changeTheme.addEventListener('change', function(){
     }
 });
 
+
+//funçao para abrir o menu hamburguer
+function openMenu() {
+    document.getElementById('overlayMenu').style.width = '50%'
+}
+
+function closeMenu() {
+    document.getElementById('overlayMenu').style.width = '0'
+}

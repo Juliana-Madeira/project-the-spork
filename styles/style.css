@@ -11,17 +11,65 @@ body{
     background-color: #FEFBF8;
 }
 
+
+/* change theme */
+/* dark theme */
+#change-theme {
+    display: none;
+}
+.dark,
+.dark h2,
+.dark h3,
+.dark .food p,
+.dark footer,
+.dark .title_ingredient,
+.dark .title,
+.dark .utils_links p a{
+    background-color: rgb(43, 22, 12);
+    color: #FFF;
+}
+.dark footer a,
+.dark a i,
+.dark footer a span{
+    color: #FFF;
+}
+.change-theme-all{
+    text-align: right;
+    margin: 10px;
+}
+.bi {
+    cursor: pointer;
+    font-size: 18px;
+}
+.bi-moon{
+    display: none;
+}
+.dark .bi-sun{
+    display: none;
+}
+.dark .bi-moon{
+    display: block;
+}
+
+
+
+/* Header e Home */
 .header {
     background-color: #FAF6EB;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .logotipo_header {
     width: 170px;
     margin: 15px 0px 2px 0px;
+}
+
+.hamburger-menu{
+    display: none;
 }
 
 .navbar {
@@ -54,52 +102,16 @@ body{
     color: rgba(43, 22, 12, 0.902);
 }
 
-/* change theme */
-/* dark theme */
-#change-theme {
-    display: none;
-}
-.dark,
-.dark h2,
-.dark h3,
-.dark .food p,
-.dark footer,
-.dark .title_ingredient,
-.dark .title,
-.dark .utils_links p a{
-    background-color: rgb(43, 22, 12);
-    color: #FFF;
-}
-.dark footer a,
-.dark a i,
-.dark footer a span{
-    color: #FFF;
-}
-.change-theme-all{
-    text-align: right;
-    margin: 20px;
-}
-.bi {
-    cursor: pointer;
-    font-size: 18px;
-}
-.bi-moon{
-    display: none;
-}
-.dark .bi-sun{
-    display: none;
-}
-.dark .bi-moon{
-    display: block;
-}
+
 
 /* Home */
 .main_home{
-    width: 70%;
-    min-height: 50vh;
+    width: 90%;
+    min-height: 70vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 70px auto;
+    margin: 0 auto;
 }
 
 .main_text{
@@ -135,8 +147,8 @@ body{
 
 /* Sobre mim */
 .main_about{
-    width: 50%;
-    min-height: 50vh;
+    width: 70%;
+    min-height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -304,3 +316,155 @@ textarea {
     text-decoration: none;
     color: black;
 }
+
+
+/* Header, Nav, Home - responsivo media querie*/
+@media (max-width: 426px){
+    /* Header e Navbar menu */
+    .header {
+        background-color: #FAF6EB;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .logotipo_header{
+        width: 150px;
+        margin-left: 15px;
+    }
+    .hamburger-menu{
+        display: flex;
+        background: transparent;
+        border: none;
+        margin-right: 15px;
+    }
+    .overlayMenu{
+        height: 40%;
+        width: 0;
+        background-color: #FAF6EB;
+        z-index: 9;
+        position: fixed;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .closeMenu{
+        color: rgba(43, 22, 12, 0.902);
+        font-size: 25px;
+        text-decoration: none;
+        position: absolute;
+        right: 15px;
+    }
+    .overlay-content ul li{
+        color: rgba(43, 22, 12, 0.902);
+        list-style: none;
+        position: relative;
+        top: 40px;
+        padding: 12px;
+    }
+
+
+    /* Page Home */
+    .main_home{
+        width: 100%;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .main_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main_text{
+        margin-top: 30px;
+        text-align: justify;
+        width: 80%;
+    } 
+    .main_title{
+        text-align: center;
+        margin-bottom: 7px;
+    }
+
+    /* Page Culinárias */
+    .food_row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    /* Details Culinárias */
+    .image_food_detail{
+        width: 80%;
+        height: 85%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    
+    .ingrendients_list{
+        width: 60%;
+        margin-top: 15px;
+        margin-left: -1px;
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+}
+ 
+@media (min-width: 426px) and (max-width: 769px){
+    .overlayMenu{
+        display: none;
+    }
+    .main_home{
+        width: 100%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    .main_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main_text{
+        margin-top: 30px;
+        text-align: justify;
+        width: 80%;
+    } 
+    .main_title{
+        text-align: center;
+        margin-bottom: 7px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1025px){
+    .overlayMenu{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1025px){
+    .overlayMenu{
+        display: none;
+    }
+}
+

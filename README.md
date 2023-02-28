@@ -1,11 +1,13 @@
 # Project The Spork
 O The Spork é um projeto de um site de receitas, com algumas informações retiradas da API [TheMealDB](https://www.themealdb.com/).
+Projeto feito para estudo de Graduação em Análise e Desenvolvimento de Sistemas.
+Responsividade aplicada. 
 
 ### Site
 Para ver o site The Spork: [clique aqui](https://juliana-madeira.github.io/project-the-spork/)
 
 ### Techs
-Utilizadas as tecnologias HTML, CSS e Javascript para estudo de Graduação em Análise e Desenvolvimento de Sistemas. 
+Utilizadas as tecnologias HTML, CSS e Javascript. 
 
 Páginas estruturadas com HTML,
 Estilizadas em CSS,
